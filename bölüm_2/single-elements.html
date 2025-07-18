@@ -7,9 +7,33 @@
   </head>
   <body>
     <div class="card-header">
-      <h3 id="title">Todo App</h3>
+      <h3 id="title">Todo App 2</h3>
     </div>
 
-    <script></script>
+    <ul id="task-list">
+      <li>Görev 1</li>
+      <li>Görev 2</li>
+      <li>Görev 3</li>
+    </ul>
+
+    <script>
+      let sonuc;
+
+      sonuc = document.getElementById("title");
+      sonuc = document.getElementById("title").id;
+      sonuc = document.getElementById("title").className;
+      sonuc = document.getElementById("title").classList;
+
+      document.getElementById("title").style.fontSize = "30px";
+      document.getElementById("title").style.color = "blue";
+
+      document.getElementById("title").innerText = "Todo App";
+      document.getElementById("title").innerHTML = "<p>Todo App</p>";
+
+      sonuc = document.querySelector("#title");
+      sonuc = document.querySelector(".card-header");
+
+      console.log(sonuc);
+    </script>
   </body>
 </html>
